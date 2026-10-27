@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bakhtsher Khan | PhD Researcher in Cybersecurity</title>
+<meta name="description" content="PhD Researcher at USTC working on Cybersecurity, Network Security, and IoT Security.">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
+  }
+  nav {
+    background: #0a1930;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  nav a:hover { color: #4fc3f7; }
+  .hero {
+    background: linear-gradient(135deg, #0a1930 0%, #1e3a8a 100%);
+    color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+  .hero .tagline { font-size: 1.3rem; color: #4fc3f7; margin-bottom: 1rem; }
+  .hero .affiliation { font-size: 1.1rem; opacity: 0.9; }
+  section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+  section h2 {
+    font-size: 2rem;
+    color: #0a1930;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #4fc3f7;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+  .about p { font-size: 1.1rem; margin-bottom: 1rem; }
+  .research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .research-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    border-left: 4px solid #4fc3f7;
+    transition: transform 0.3s;
+  }
+  .research-card:hover { transform: translateY(-5px); }
+  .research-card h3 { color: #0a1930; margin-bottom: 0.5rem; }
+  .skills-section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+  }
+  .skills-section h3 { color: #0a1930; margin-bottom: 1rem; }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .skill-tag {
+    background: #e3f2fd;
+    color: #0a1930;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .project-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+  }
+  .project-card h3 { color: #0a1930; margin-bottom: 0.5rem; }
+  .project-card a { color: #1e3a8a; text-decoration: none; font-weight: 500; }
+  .project-card a:hover { text-decoration: underline; }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  .contact-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+  }
+  .contact-card:hover { transform: translateY(-3px); }
+  .contact-card a { color: #1e3a8a; text-decoration: none; font-weight: 600; }
+  .contact-card .label { color: #666; font-size: 0.9rem; margin-bottom: 0.5rem; }
+  footer {
+    background: #0a1930;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 2rem; }
+    .hero .tagline { font-size: 1.1rem; }
+    nav ul { gap: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <h1>Bakhtsher Khan</h1>
+  <p class="tagline">PhD Researcher · Cybersecurity · Network Security · IoT Security</p>
+  <p class="affiliation">University of Science and Technology of China (USTC), Hefei</p>
+</header>
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>I'm a PhD researcher at the <strong>University of Science and Technology of China (USTC)</strong>, working at the intersection of cybersecurity, network security, and IoT security.</p>
+  <p>My research combines <strong>reverse engineering</strong>, <strong>protocol analysis</strong>, and <strong>formal verification</strong> to uncover security vulnerabilities in real-world secure messaging systems and IoT devices. I enjoy bridging the gap between theoretical cryptography and practical security — identifying weaknesses that matter, and proving properties that hold.</p>
+</section>
+
+<section id="research">
+  <h2>Research Focus</h2>
+  <div class="research-grid">
+    <div class="research-card">
+      <h3>Reverse Engineering</h3>
+      <p>Analyzing closed-source secure messaging protocols to identify weaknesses and verify security claims.</p>
+    </div>
+    <div class="research-card">
+      <h3>Network Security</h3>
+      <p>Protocol design, traffic analysis, and secure communication over untrusted networks.</p>
+    </div>
+    <div class="research-card">
+      <h3>IoT Security</h3>
+      <p>Lightweight cryptography, device authentication, and embedded security for resource-constrained devices.</p>
+    </div>
+    <div class="research-card">
+      <h3>Applied Cryptography</h3>
+      <p>Key exchange protocols, encryption schemes, and secure messaging primitives.</p>
+    </div>
+    <div class="research-card">
+      <h3>Formal Verification</h3>
+      <p>Proving security properties of protocols using CryptoVerif, ProVerif, and Tamarin.</p>
+    </div>
+    <div class="research-card">
+      <h3>Vulnerability Research</h3>
+      <p>Identifying and responsibly disclosing security flaws in deployed systems.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills & Tools</h2>
+  <div class="skills-section">
+    <h3>Programming & Scripting</h3>
+    <div class="skill-tags">
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">Java</span>
+      <span class="skill-tag">C</span>
+      <span class="skill-tag">C++</span>
+      <span class="skill-tag">Bash</span>
+      <span class="skill-tag">Assembly</span>
+    </div>
+  </div>
+  <div class="skills-section">
+    <h3>Reverse Engineering & Binary Analysis</h3>
+    <div class="skill-tags">
+      <span class="skill-tag">Ghidra</span>
+      <span class="skill-tag">IDA Pro</span>
+      <span class="skill-tag">Radare2</span>
+      <span class="skill-tag">GDB</span>
+      <span class="skill-tag">Binary Ninja</span>
+      <span class="skill-tag">Frida</span>
+      <span class="skill-tag">ADB</span>
+    </div>
+  </div>
+  <div class="skills-section">
+    <h3>Network & Protocol Analysis</h3>
+    <div class="skill-tags">
+      <span class="skill-tag">Wireshark</span>
+      <span class="skill-tag">tcpdump</span>
+      <span class="skill-tag">Burp Suite</span>
+      <span class="skill-tag">mitmproxy</span>
+      <span class="skill-tag">Scapy</span>
+      <span class="skill-tag">Nmap</span>
+    </div>
+  </div>
+  <div class="skills-section">
+    <h3>Cryptography & Formal Verification</h3>
+    <div class="skill-tags">
+      <span class="skill-tag">CryptoVerif</span>
+      <span class="skill-tag">ProVerif</span>
+      <span class="skill-tag">Tamarin Prover</span>
+      <span class="skill-tag">OpenSSL</span>
+    </div>
+  </div>
+  <div class="skills-section">
+    <h3>Platforms & Workflow</h3>
+    <div class="skill-tags">
+      <span class="skill-tag">Ubuntu</span>
+      <span class="skill-tag">Linux</span>
+      <span class="skill-tag">LaTeX</span>
+      <span class="skill-tag">Git</span>
+      <span class="skill-tag">GitHub</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Featured Projects</h2>
+  <div class="project-card">
+    <h3>Secure Messaging</h3>
+    <p>A Python client-server messaging application implementing <strong>RSA</strong>, <strong>Diffie-Hellman</strong>, and <strong>ElGamal</strong> cryptographic protocols — demonstrating foundational secure communication from the ground up.</p>
+    <p style="margin-top: 1rem;"><a href="https://github.com/BakhtsherKhan/Secure-Messaging-" target="_blank">View on GitHub →</a></p>
+  </div>
+  <div class="project-card">
+    <h3>Research Artifact (Under Review)</h3>
+    <p>Formal analysis of delivery integrity in server-mediated messaging systems, including CryptoVerif models, packet traces, and documentation. Currently under double-blind review at a top-tier security conference.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Let's Connect</h2>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="label">GitHub</div>
+      <a href="https://github.com/BakhtsherKhan" target="_blank">@BakhtsherKhan</a>
+    </div>
+    <div class="contact-card">
+      <div class="label">LinkedIn</div>
+      <a href="https://www.linkedin.com/in/bakht-sher-khan-746014153/" target="_blank">Bakht Sher Khan</a>
+    </div>
+    <div class="contact-card">
+      <div class="label">Google Scholar</div>
+      <a href="https://scholar.google.com/citations?user=dd1FIj8AAAAJ&hl=en" target="_blank">Publications</a>
+    </div>
+    <div class="contact-card">
+      <div class="label">ORCID</div>
+      <a href="https://orcid.org/0000-0001-9988-0578" target="_blank">0000-0001-9988-0578</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Bakhtsher Khan · University of Science and Technology of China</p>
+</footer>
+
+</body>
+</html>
