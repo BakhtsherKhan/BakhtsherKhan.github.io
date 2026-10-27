@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bakht Sher Khan | PhD Researcher in Cybersecurity</title>
-<meta name="description" content=" PhD Researcher at USTC working on Cybersecurity, Network Security, and IoT Security.">
+<title>Bakht Sher Ali | PhD Researcher in Cybersecurity</title>
+<meta name="description" content="PhD Researcher in Computer Science and Technology. Research in Cybersecurity, IoT Security, Intrusion Detection, and Secure Messaging Protocols.">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -25,7 +25,7 @@
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
   }
   nav a {
@@ -42,18 +42,19 @@
     text-align: center;
   }
   .profile-photo {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #4fc3f7;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-}
-.hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-.hero .tagline { font-size: 1.3rem; color: #4fc3f7; margin-bottom: 1rem; }
-.hero .affiliation { font-size: 1.1rem; opacity: 0.9; }
-section {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4fc3f7;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  }
+  .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+  .hero .tagline { font-size: 1.3rem; color: #4fc3f7; margin-bottom: 1rem; }
+  .hero .affiliation { font-size: 1.1rem; opacity: 0.9; margin-bottom: 0.5rem; }
+  .hero .location { font-size: 1rem; opacity: 0.8; }
+  section {
     max-width: 1000px;
     margin: 0 auto;
     padding: 4rem 2rem;
@@ -83,6 +84,54 @@ section {
   }
   .research-card:hover { transform: translateY(-5px); }
   .research-card h3 { color: #0a1930; margin-bottom: 0.5rem; }
+  .education-timeline { margin-top: 1.5rem; }
+  .education-item {
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #4fc3f7;
+  }
+  .education-year {
+    color: #4fc3f7;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+  }
+  .education-item h3 { color: #0a1930; margin-bottom: 0.3rem; }
+  .education-item .institution {
+    color: #555;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  .publications-list {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-top: 1.5rem;
+  }
+  .publication {
+    padding: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .publication:last-child { border-bottom: none; }
+  .publication .pub-title { font-weight: 600; color: #0a1930; margin-bottom: 0.3rem; }
+  .publication .pub-venue { color: #555; font-style: italic; font-size: 0.95rem; }
+  .publication .pub-tag {
+    display: inline-block;
+    background: #e3f2fd;
+    color: #0a1930;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    margin-top: 0.3rem;
+  }
+  .pub-tag.sci { background: #c8e6c9; color: #2e7d32; }
+  .pub-tag.review { background: #fff3cd; color: #856404; }
   .skills-section {
     background: #fff;
     border-radius: 10px;
@@ -110,6 +159,38 @@ section {
   .project-card h3 { color: #0a1930; margin-bottom: 0.5rem; }
   .project-card a { color: #1e3a8a; text-decoration: none; font-weight: 500; }
   .project-card a:hover { text-decoration: underline; }
+  .experience-item {
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #4fc3f7;
+  }
+  .experience-year {
+    color: #4fc3f7;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+  }
+  .experience-item h3 { color: #0a1930; margin-bottom: 0.3rem; }
+  .experience-item .org { color: #555; font-style: italic; }
+  .awards-list {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-top: 1.5rem;
+  }
+  .award-item {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  .award-item:last-child { border-bottom: none; }
+  .award-icon { color: #4fc3f7; font-weight: bold; font-size: 1.2rem; }
   .contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -147,108 +228,222 @@ section {
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#research">Research</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#awards">Awards</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
 <header class="hero">
-  <img src="Ali.jpg" alt="Bakht Sher Khan" class="profile-photo">
-  <h1>Bakht Sher Khan</h1>
-  <p class="tagline">PhD Researcher · Cybersecurity · Network Security · IoT Security</p>
-  <p class="affiliation">University of Science and Technology of China (USTC), Hefei</p>
+  <img src="Ali.jpg" alt="Bakht Sher Ali" class="profile-photo">
+  <h1>Bakht Sher Ali</h1>
+  <p class="tagline">PhD Researcher · Computer Science and Technology</p>
+  <p class="affiliation">University of Science and Technology of China (USTC)</p>
+  <p class="location">Hefei, Anhui, China</p>
 </header>
 
 <section id="about" class="about">
   <h2>About Me</h2>
-  <p>I'm a PhD researcher at the <strong>University of Science and Technology of China (USTC)</strong>, working at the intersection of cybersecurity, network security, and IoT security.</p>
-  <p>My research combines <strong>reverse engineering</strong>, <strong>protocol analysis</strong>, and <strong>formal verification</strong> to uncover security vulnerabilities in real-world secure messaging systems and IoT devices. I enjoy bridging the gap between theoretical cryptography and practical security, identifying weaknesses that matter, and proving properties that hold.</p>
+  <p>I am a self-motivated PhD researcher in <strong>Computer Science and Technology</strong>, with research focused on <strong>cybersecurity, IoT security, intrusion detection systems</strong>, and the integration of <strong>Machine Learning and Deep Learning</strong> techniques to strengthen modern security frameworks.</p>
+  <p>My work addresses emerging challenges in network security — including anomaly detection, threat mitigation, and secure communication protocols — in highly connected environments such as the Internet of Things (IoT). I am passionate about developing scalable, adaptive security solutions that ensure data integrity, privacy, and protection against evolving cyberattacks.</p>
 </section>
 
 <section id="research">
-  <h2>Research Focus</h2>
+  <h2>Research Areas</h2>
   <div class="research-grid">
     <div class="research-card">
-      <h3>Reverse Engineering</h3>
-      <p>Analyzing closed-source secure messaging protocols to identify weaknesses and verify security claims.</p>
-    </div>
-    <div class="research-card">
-      <h3>Network Security</h3>
-      <p>Protocol design, traffic analysis, and secure communication over untrusted networks.</p>
+      <h3>Intrusion Detection</h3>
+      <p>AI-based intrusion detection systems for industrial control systems and IoT networks, leveraging big data analytics and ML/DL models.</p>
     </div>
     <div class="research-card">
       <h3>IoT Security</h3>
-      <p>Lightweight cryptography, device authentication, and embedded security for resource-constrained devices.</p>
+      <p>Threat detection in Internet of Medical Things, lightweight cryptography, and secure communication for resource-constrained devices.</p>
     </div>
     <div class="research-card">
-      <h3>Applied Cryptography</h3>
-      <p>Key exchange protocols, encryption schemes, and secure messaging primitives.</p>
+      <h3>Cyber Security</h3>
+      <p>Protecting critical infrastructure against cyberattacks, including industrial IoT, SCADA systems, and self-driving vehicles.</p>
     </div>
     <div class="research-card">
-      <h3>Formal Verification</h3>
-      <p>Proving security properties of protocols using CryptoVerif, ProVerif, and Tamarin.</p>
+      <h3>Privacy Preservation</h3>
+      <p>Federated learning, zero-trust architectures, and privacy-preserving frameworks for IoT and cloud computing environments.</p>
     </div>
     <div class="research-card">
-      <h3>Vulnerability Research</h3>
-      <p>Identifying and responsibly disclosing security flaws in deployed systems.</p>
+      <h3>Secure Messaging Analysis</h3>
+      <p>Reverse engineering and formal verification of secure messaging protocols using Tamarin Prover and CryptoVerif.</p>
     </div>
+    <div class="research-card">
+      <h3>Explainable AI for Security</h3>
+      <p>Explainable learning machines for protecting IIoT-enabled industrial control systems against cyber-attacks.</p>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="education-timeline">
+    <div class="education-item">
+      <div class="education-year">Current</div>
+      <h3>PhD in Computer Science and Technology</h3>
+      <p class="institution">University of Science and Technology of China (USTC), Hefei, China</p>
+      <p>Research focus: Cybersecurity, IoT security, intrusion detection, and formal verification of secure messaging protocols.</p>
+    </div>
+    <div class="education-item">
+      <div class="education-year">2019 – 2022</div>
+      <h3>Master in Computer Science and Technology</h3>
+      <p class="institution">Nanjing University of Aeronautics and Astronautics (NUAA), Nanjing, China</p>
+      <p>Thesis: "Research on multi-class imbalance problem to detect cyber-attacks in industrial control systems." Fully funded by Chinese Government Scholarship.</p>
+    </div>
+    <div class="education-item">
+      <div class="education-year">2013 – 2017</div>
+      <h3>BS (Honors) in Information Technology</h3>
+      <p class="institution">University of Malakand, KPK, Pakistan</p>
+      <p>Bachelor's thesis: "Online Shopping System." Comprehensive coursework in networks, databases, and software engineering.</p>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <h2>Selected Publications</h2>
+  <p>Author of <strong>10+ peer-reviewed papers</strong> in SCI-indexed journals, including IEEE Transactions, Elsevier Computer Networks, and Ad Hoc Networks. See my <a href="https://scholar.google.com/citations?user=dd1FIj8AAAAJ&hl=en" target="_blank" style="color:#1e3a8a;font-weight:600;">Google Scholar profile</a> for the complete list.</p>
+  <div class="publications-list">
+    <div class="publication">
+      <div class="pub-title">Game-Theoretic Federated Deception for Consumer Electronics: Adaptive Coordination in IoT Security</div>
+      <div class="pub-venue">IEEE Transactions on Consumer Electronics, IEEE, 2026</div>
+      <span class="pub-tag sci">SCI · Published</span>
+      <span class="pub-tag">IEEE</span>
+    </div>
+    <div class="publication">
+      <div class="pub-title">AMSE-DL: Stacking ensemble with SHAP explainability for intrusion detection in IIoT networks</div>
+      <div class="pub-venue">Computer Networks, Elsevier, p. 112669, 2026</div>
+      <span class="pub-tag sci">SCI · Published</span>
+      <span class="pub-tag">Elsevier</span>
+    </div>
+    <div class="publication">
+      <div class="pub-title">ICS-IDS: Application of big data analysis in AI-based intrusion detection systems to identify cyberattacks in ICS networks</div>
+      <div class="pub-venue">The Journal of Supercomputing, Vol. 80, pp. 7876–7905, 2024</div>
+      <span class="pub-tag sci">SCI · Published</span>
+      <span class="pub-tag">First Author</span>
+    </div>
+    <div class="publication">
+      <div class="pub-title">A context-aware zero trust-based hybrid approach to IoT-based self-driving vehicles security</div>
+      <div class="pub-venue">Ad Hoc Networks, Vol. 167, pp. 103694, 2025</div>
+      <span class="pub-tag sci">SCI · Published</span>
+    </div>
+    <div class="publication">
+      <div class="pub-title">XSRU-IoMT: Explainable simple recurrent units for threat detection in Internet of Medical Things networks</div>
+      <div class="pub-venue">Future Generation Computer Systems, Vol. 127, pp. 181-193</div>
+      <span class="pub-tag sci">SCI · Published</span>
+    </div>
+    <div class="publication">
+      <div class="pub-title">A Privacy Preserving Federated Learning Based IoT Framework Using Cloud Computing</div>
+      <div class="pub-venue">Cloud Computing, 2024</div>
+      <span class="pub-tag sci">SCI · Published</span>
+    </div>
+    <div class="publication">
+      <div class="pub-title">Hybrid XGBoost-CNN Model for Anomaly Detection: A New Approach for IoT Wireless Sensor Networks</div>
+      <div class="pub-venue">ICCK Transactions on Advanced Computing and Systems, Vol. 2(1): 42-52, 2026</div>
+      <span class="pub-tag sci">Published</span>
+    </div>
+    <div class="publication">
+      <div class="pub-title">Explainable Learning Machines for Protecting IIoT-enabled Industrial Control Systems Against Cyber-Attacks</div>
+      <div class="pub-venue">9th International Academic Conference for Graduates, NUAA, Nanjing, China, 2021</div>
+      <span class="pub-tag">Conference</span>
+      <span class="pub-tag">First Author</span>
+    </div>
+    <div class="publication">
+      <div class="pub-title">Orchestrating IoT Safety: A Next-Gen Framework Using IFTTT Applets</div>
+      <div class="pub-venue">Cloud Computing (SCI)</div>
+      <span class="pub-tag review">Under Review</span>
+      <span class="pub-tag">First Author</span>
+    </div>
+    <div class="publication">
+      <div class="pub-title">EGIS-IIoT: Classifier-Gated Hierarchical Reinforcement Learning for Secure Cyber-Physical Defense in Industrial IoT Systems</div>
+      <div class="pub-venue">Preprint available on SSRN</div>
+      <span class="pub-tag review">Preprint</span>
+    </div>
+  </div>
+  <p style="margin-top:1.5rem;"><strong>Journal Reviewer for:</strong> Computing and Informatics · ICCK Transactions on Advanced Computing and Systems · IEEE Transactions on Consumer Electronics · Intelligent Journal System</p>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="experience-item">
+    <div class="experience-year">2018 – 2019</div>
+    <h3>Lecturer</h3>
+    <p class="org">Swat Collegiate College, Swat, KPK, Pakistan</p>
+    <p>Taught undergraduate courses in computer science and information technology, mentored students on programming and research projects.</p>
   </div>
 </section>
 
 <section id="skills">
   <h2>Skills & Tools</h2>
+
   <div class="skills-section">
-    <h3>Programming & Scripting</h3>
+    <h3>Formal Verification & Protocol Analysis</h3>
+    <div class="skill-tags">
+      <span class="skill-tag">Tamarin Prover</span>
+      <span class="skill-tag">CryptoVerif</span>
+      <span class="skill-tag">ProVerif</span>
+      <span class="skill-tag">Symbolic Protocol Modeling</span>
+      <span class="skill-tag">Attack-Trace Analysis</span>
+    </div>
+  </div>
+
+  <div class="skills-section">
+    <h3>Android Reverse Engineering</h3>
+    <div class="skill-tags">
+      <span class="skill-tag">JADX</span>
+      <span class="skill-tag">Apktool</span>
+      <span class="skill-tag">Ghidra</span>
+      <span class="skill-tag">IDA Pro</span>
+      <span class="skill-tag">Frida</span>
+      <span class="skill-tag">Objection</span>
+      <span class="skill-tag">ADB</span>
+      <span class="skill-tag">Smali/DEX Analysis</span>
+    </div>
+  </div>
+
+  <div class="skills-section">
+    <h3>Network & Traffic Analysis</h3>
+    <div class="skill-tags">
+      <span class="skill-tag">Wireshark</span>
+      <span class="skill-tag">TShark</span>
+      <span class="skill-tag">mitmproxy</span>
+      <span class="skill-tag">Charles Proxy</span>
+      <span class="skill-tag">HTTP Toolkit</span>
+      <span class="skill-tag">Proxyman</span>
+      <span class="skill-tag">TLS/HTTP Inspection</span>
+    </div>
+  </div>
+
+  <div class="skills-section">
+    <h3>Programming & Development</h3>
     <div class="skill-tags">
       <span class="skill-tag">Python</span>
       <span class="skill-tag">Java</span>
-      <span class="skill-tag">C</span>
       <span class="skill-tag">C++</span>
-      <span class="skill-tag">Bash</span>
-      <span class="skill-tag">Assembly</span>
+      <span class="skill-tag">HTML</span>
+      <span class="skill-tag">PHP</span>
+      <span class="skill-tag">API Integration</span>
+      <span class="skill-tag">Web Scraping</span>
+      <span class="skill-tag">Machine Learning</span>
     </div>
   </div>
+
   <div class="skills-section">
-    <h3>Reverse Engineering & Binary Analysis</h3>
+    <h3>Research & Documentation Tools</h3>
     <div class="skill-tags">
-      <span class="skill-tag">Ghidra</span>
-      <span class="skill-tag">IDA Pro</span>
-      <span class="skill-tag">Radare2</span>
-      <span class="skill-tag">GDB</span>
-      <span class="skill-tag">Binary Ninja</span>
-      <span class="skill-tag">Frida</span>
-      <span class="skill-tag">ADB</span>
-    </div>
-  </div>
-  <div class="skills-section">
-    <h3>Network & Protocol Analysis</h3>
-    <div class="skill-tags">
-      <span class="skill-tag">Wireshark</span>
-      <span class="skill-tag">tcpdump</span>
-      <span class="skill-tag">Burp Suite</span>
-      <span class="skill-tag">mitmproxy</span>
-      <span class="skill-tag">Scapy</span>
-      <span class="skill-tag">Nmap</span>
-    </div>
-  </div>
-  <div class="skills-section">
-    <h3>Cryptography & Formal Verification</h3>
-    <div class="skill-tags">
-      <span class="skill-tag">CryptoVerif</span>
-      <span class="skill-tag">ProVerif</span>
-      <span class="skill-tag">Tamarin Prover</span>
-      <span class="skill-tag">OpenSSL</span>
-    </div>
-  </div>
-  <div class="skills-section">
-    <h3>Platforms & Workflow</h3>
-    <div class="skill-tags">
-      <span class="skill-tag">Ubuntu</span>
-      <span class="skill-tag">Linux</span>
       <span class="skill-tag">LaTeX</span>
-      <span class="skill-tag">Git</span>
-      <span class="skill-tag">GitHub</span>
+      <span class="skill-tag">Overleaf</span>
+      <span class="skill-tag">MS Word</span>
+      <span class="skill-tag">Excel</span>
+      <span class="skill-tag">PowerPoint</span>
+      <span class="skill-tag">Visio</span>
+      <span class="skill-tag">Photoshop</span>
     </div>
   </div>
 </section>
@@ -256,13 +451,29 @@ section {
 <section id="projects">
   <h2>Featured Projects</h2>
   <div class="project-card">
-    <h3>Secure Messaging</h3>
-    <p>A Python client-server messaging application implementing <strong>RSA</strong>, <strong>Diffie-Hellman</strong>, and <strong>ElGamal</strong> cryptographic protocols — demonstrating foundational secure communication from the ground up.</p>
+    <h3>Secure Messaging Implementation</h3>
+    <p>Python client-server messaging application implementing <strong>RSA</strong>, <strong>Diffie-Hellman</strong>, and <strong>ElGamal</strong> cryptographic protocols — demonstrating foundational secure communication from the ground up.</p>
     <p style="margin-top: 1rem;"><a href="https://github.com/BakhtsherKhan/Secure-Messaging-" target="_blank">View on GitHub →</a></p>
   </div>
   <div class="project-card">
     <h3>Research Artifact (Under Review)</h3>
-    <p>Formal analysis of delivery integrity in server-mediated messaging systems, including CryptoVerif models, packet traces, and documentation. Currently under double-blind review at a top-tier security conference.</p>
+    <p>Formal analysis of delivery integrity in server-mediated messaging systems, including CryptoVerif models, packet traces, and documentation. Currently under double-blind review.</p>
+  </div>
+  <div class="project-card">
+    <h3>Master's Thesis — SCADA Intrusion Detection</h3>
+    <p>Investigated multi-class imbalance problem to detect cyber-attacks in industrial control systems. Evaluated sampling methods and ML models for improved SCADA attack detection.</p>
+  </div>
+</section>
+
+<section id="awards">
+  <h2>Awards & Memberships</h2>
+  <div class="awards-list">
+    <div class="award-item"><span class="award-icon">★</span><div><strong>Chinese Government Scholarship</strong> — Fully funded Master's degree, awarded by the Government of China.</div></div>
+    <div class="award-item"><span class="award-icon">★</span><div><strong>Member, China Computer Federation (CCF)</strong></div></div>
+    <div class="award-item"><span class="award-icon">★</span><div><strong>Essay Competition Award</strong> — China-Pakistan Friendship Essay Competition</div></div>
+    <div class="award-item"><span class="award-icon">★</span><div><strong>Conference Participation Certificates</strong> — SpaCCS 2020 (NUAA Nanjing), Inscrypt 2020 (Jinan University), International Conference of Artificial Intelligence 2021 (NUAA Nanjing)</div></div>
+    <div class="award-item"><span class="award-icon">★</span><div><strong>IT Club Exhibition Organizer</strong> — Spitic 14, University of Malakand</div></div>
+    <div class="award-item"><span class="award-icon">★</span><div><strong>Certifications:</strong> TEFL · Webinar on AI, IoT, and Blockchain: Rethinking Risk Management and Compliance</div></div>
   </div>
 </section>
 
@@ -270,18 +481,22 @@ section {
   <h2>Let's Connect</h2>
   <div class="contact-grid">
     <div class="contact-card">
+      <div class="label">Email</div>
+      <a href="mailto:bakhtsher112@gmail.com">bakhtsher112@gmail.com</a>
+    </div>
+    <div class="contact-card">
       <div class="label">GitHub</div>
       <a href="https://github.com/BakhtsherKhan" target="_blank">@BakhtsherKhan</a>
     </div>
     <div class="contact-card">
       <div class="label">LinkedIn</div>
-      <a href="https://www.linkedin.com/in/bakht-sher-khan-746014153/" target="_blank">Bakht Sher Khan</a>
+      <a href="https://www.linkedin.com/in/bakht-sher-khan-746014153/" target="_blank">Bakht Sher Ali</a>
     </div>
     <div class="contact-card">
       <div class="label">Google Scholar</div>
       <a href="https://scholar.google.com/citations?user=dd1FIj8AAAAJ&hl=en" target="_blank">Publications</a>
     </div>
-        <div class="contact-card">
+    <div class="contact-card">
       <div class="label">ORCID</div>
       <a href="https://orcid.org/0000-0001-9988-0578" target="_blank">0000-0001-9988-0578</a>
     </div>
@@ -293,7 +508,7 @@ section {
 </section>
 
 <footer>
-  <p>© 2026 Bakht Sher Khan · University of Science and Technology of China</p>
+  <p>© 2026 Bakht Sher Ali · University of Science and Technology of China (USTC), Hefei</p>
 </footer>
 
 </body>
